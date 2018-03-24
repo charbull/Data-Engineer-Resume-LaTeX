@@ -20,7 +20,7 @@ Once both the distribution and editor are installed, clone this repository using
 ## License
 
 ```
-Copyright 2016 Harshavardhan Gadgil
+Copyright 2018 Charbel El Kaed
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
