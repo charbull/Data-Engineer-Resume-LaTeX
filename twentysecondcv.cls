@@ -25,6 +25,7 @@
 \RequirePackage{marvosym}
 \RequirePackage{parskip}
 
+
 \usepackage{enumitem}
 \setlist[itemize]{leftmargin=*}
 
@@ -142,7 +143,7 @@
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
-\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
+%\newcommand{\cvsite}[1]{\renewcommand{\cvsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\aboutme}{#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
@@ -155,7 +156,7 @@
 \newcommand\programming[1]{ 
 	\renewcommand{\programming}{
 		\begin{tikzpicture}
-        	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+        %	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
@@ -170,8 +171,21 @@
 	}
 }
 
+\newcommand\tools[1]{ 
+	\renewcommand{\tools}{
+		{#1}
+	}
+}
+
+
+\newcommand\languages[1]{ 
+	\renewcommand{\languages}{
+		{#1}
+	}
+}
+
 %----------------------------------------------------------------------------------------
-%  SIDEBAR LAYOUT
+%  SIDEBAR LAYOUT page 1
 %----------------------------------------------------------------------------------------
 
 \newcommand{\makeprofile}{
@@ -186,7 +200,7 @@
     %------------------------------------------------
     
         \vspace{4mm}
-    {\Huge\color{pblue}\cvname}
+    {\LARGE\color{pblue}\cvname}
     
     \vspace{2mm}
 
@@ -207,13 +221,13 @@
               $} 
             & \cvnumberphone\\}
             
-      \ifthenelse{\equal{\cvsite}{}}{}{
-            {$
-              \begin{array}{l}
-              \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
-              \end{array}
-              $} 
-            & \href{http://\cvsite}{\cvsite} \\}
+  %    \ifthenelse{\equal{\href{\cvsite}{\cvsite}}{}}{}{
+   %         {$
+    %          \begin{array}{l}
+    %          \hspace{2.8mm} \huge \textnormal{\textcolor{test}{\faGlobe}}
+    %          \end{array}
+    %          $} 
+    %        & \href{http://\cvsite}{\cvsite} \\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
@@ -248,20 +262,63 @@
 	\skills
         
         %------------------------------------------------
-        
-        \vspace{3mm}
-       
-	 {\large \textbf{Programming}} 
-
-		 \programming
          
         \vspace{4mm}
-        \profilesection{Projects}{3cm} 
+        \profilesection{Projects}{3.2cm} 
         
         \projects
       
   \end{textblock}
 }
+
+%----------------------------------------------------------------------------------------
+%  SIDEBAR LAYOUT page 2
+%----------------------------------------------------------------------------------------
+\newcommand{\nextpage}{
+\newpage
+  \begin{tikzpicture}[remember picture,overlay]
+      \node [rectangle, fill=sidecolor, anchor=north, minimum width=9cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
+  \end{tikzpicture}
+
+  %------------------------------------------------
+
+  \begin{textblock}{6}(0.5, 0.2)
+
+    %------------------------------------------------
+    
+     
+    \vspace{2mm}
+
+    %------------------------------------------------
+    
+   
+
+    %------------------------------------------------
+    
+    \vspace{4mm}
+    \renewcommand{\arraystretch}{2}
+  
+        
+        %------------------------------------------------
+        
+        \vspace{3mm}
+        \profilesection{Development}{1.6cm}
+
+		 \programming
+		 
+		 \vspace{3mm}
+        {\large \textbf{Frameworks \& Tools}}
+        \tools
+         
+       \vspace{4mm}
+    \renewcommand{\arraystretch}{2}
+         
+          \profilesection{Languages}{2.3cm}
+        \languages
+      
+  \end{textblock}
+}
+
 
 
 %----------------------------------------------------------------------------------------
