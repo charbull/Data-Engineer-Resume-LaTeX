@@ -22,26 +22,69 @@
 \newcommand\skills{ 
 ~
 	\smartdiagram[bubble diagram]{
-        \textbf{Data}\\\textbf{Engineering},
-        \textbf{Full Stack}\\\textbf{Web Dev},
-        \textbf{~~~~~OOP~~~~~~},
-        \textbf{Mobile}\\\textbf{Dev},
+        \textbf{Architecture},
+        \textbf{Model}\\\textbf{Driven}\\\textbf{Eng.},
+        \textbf{~~~~~IoT~~~~~~},
+        \textbf{Business}\\\textbf{Case},
+        \textbf{Ontology}\\\textbf{Modelling},
         \textbf{Machine}\\\textbf{Learning},
-        \textbf{Test}\\\textbf{~~Automation~~},
-        \textbf{Statistical}\\\textbf{Analysis}
+        \textbf{~~~~Big~~~~}\\\textbf{~~~~Data~~~~}\\
     }
 }
 
 % Programming skill bars
-\programming{{C $\textbullet$ C++  $\textbullet$ R / 3}, {Java $\textbullet$ SQL $\textbullet$ \large \LaTeX / 3.5}, {HTML5 $\textbullet$ JS $\textbullet$ Python / 5}}
+\programming{
+{Deep Learning $\textbullet$ TensorFlow  $\textbullet$ Python / 3},
+{Big Data $\textbullet$ Apache Spark $\textbullet$ Data Lake / 4},
+{Programming $\textbullet$ Java $\textbullet$ C\# / 5}, 
+{Ontology $\textbullet$ OWL $\textbullet$ RDF $\textbullet$ SPARQL / 5.7}}
 
 % Projects text
 \projects{
-\textbf{DecAR} - An augmented reality interior decoration app for Android \\
-        \textbf{CIS*6320} - An implementation of the Bicubic interpolation algorithm in C++
-        \textbf{CIS*6650} - A comparative statistical study of SVM kernels, and number of hidden layers in ANN, on 5 UCI datasets
-        \textbf{CIS*6660} - A data linkage project to integrate Canada's WWI casualties and 1901 Canadian census using an SVM
-        \textbf{CIS*6650} - A statistical study of spurious correlations, such as correlating beer production with election outcome
+
+\textbf{Butlor} - A Workplace Advisor chatbot on slack channel. Query answering based on buildings and sensors ontologies.\\
+
+\textbf{Butlor Voice Kit} - Integration of Butlor on the Google Voice Kit.\\
+
+\textbf{OLGA} - An Ontology Library Generator (C\#, Java, Py) based on RDF and OWL Ontology models.\\
+
+\textbf{FOrT\'{E}} - a big data Federated Ontology and Timeseries query Engine based on Apache Spark.\\
+
+\textbf{SRE} - A Semantic Rules Engine for Industrial IoT Gateways in Lua.\\
+
+\textbf{Notixum} - A Marketplace for Data and Asset Exchange based on Ethereum.\\
+
+\textbf{Doxen} - A Dynamic Ontology-based Proxy Generator enabling interoperability.\\
+
+%\textbf{ATOPAI} - An Alignment and annotation Tool framewOrk for Plug and plAy Interoperability.\\
+}
+
+\languages{
+
+\begin{itemize}
+\item \textbf{English} - fluent.
+\item \textbf{French} - native language.
+\item \textbf{Arabic} - native language.
+\item \textbf{Italian} - beginner.
+\end{itemize}
+}
+
+
+\tools{
+
+\begin{itemize}
+    \item \textbf{Chatbot \& NLP} - Azure Bot Framework, Azure LUIS, Dialogflow Api.ai, Google Speech API, WordNet.
+\item \textbf{Big Data} - Apache Spark, Azure Data Lake, Hadoop, Hive.
+\item \textbf{Ontology Dev.} - Prot\'{e}g\'{e}, TopBraid.
+\item \textbf{Dev.} - Eclipse, Visual Studio.
+\item \textbf{Prog. \& scripting lang.} - Java, C\#, Python, Lua, C, Ada, Caml.
+\item \textbf{Code Generation related} - FreeMarker (template engine), Janino (Compiler)
+\item \textbf{Grammar Interpreter} - Antlr.
+\item \textbf{NoSQL} - MongoDB, Stardog (RDF Store)
+\item \textbf{OS} - Linux, MacOs, Windows
+\item \textbf{Misc} - Maven, Nuget, Git
+
+\end{itemize}
 }
 
 %----------------------------------------------------------------------------------------
@@ -49,15 +92,15 @@
 %----------------------------------------------------------------------------------------
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\cvname{HARSH GADGIL} % Your name
-\cvjobtitle{ Data Engineer } % Job
+\cvname{Charbel El Kaed, PhD} % Your name
+\cvjobtitle{Business Architect} % Job
 % title/career
 
-\cvlinkedin{/in/hsgadgil}
-\cvgithub{opensorceror}
-\cvnumberphone{(647) 221 7999} % Phone number
-\cvsite{hgadgil.com} % Personal website
-\cvmail{harsh.gadgil@gmail.com} % Email address
+\cvlinkedin{/in/charbel-kaed}
+\cvgithub{charbull}
+\cvnumberphone{+1 (978) 289 3190} % Phone number
+%\cvsite{hgadgil.com} % Personal website
+\cvmail{charbel.kaed@gmail.com} % Email address
 
 %----------------------------------------------------------------------------------------
 
@@ -65,109 +108,177 @@
 
 \makeprofile % Print the sidebar
 
-%----------------------------------------------------------------------------------------
-%	 EDUCATION
-%----------------------------------------------------------------------------------------
-\section{Education}
 
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitem
-    	{2015 - 2017}
-        {}
-        {MSc., Computer Science \textnormal{(GPA: 3.7/4.0)}}
-        {\href{http://www.uoguelph.ca/}{University of Guelph, Canada}}
-        {}
-        {}
-	\twentyitem
-    	{2009 - 2013}
-		{}
-        {BEng., Computer Engineering \textnormal{(GPA: 4.0/4.0)}}
-        {\href{http://www.unipune.ac.in/}{University of Pune, India}}
-        {}
-        {}
-	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
-\end{twenty}
-
-\section{Research}
-\begin{twenty}
-	\twentyitem
-    	{2015 - 2017}
-		{}
-        {MSc. Candidate, Graduate Research Assistant}
-        {\href{http://www.uoguelph.ca/}{University of Guelph}}
-        {}
-        {
-       	\textbf{Thesis}: Data Integration from Multiple Historical Sources to Study Canadian Casualties of WWI
-        {\begin{itemize}
-        \item Proposed a scalable stepwise deterministic method to reliably integrate datasets without labeled data. The method performs comparably with a method that incorporates a Support Vector Machine
-        \item Constructed a rich longitudinal dataset to enable comphrehensive time-series analyses about WWI Canadian society and military
-        \item \textbf{Tools}: R, Python, scikit-learn, BeautifulSoup, pandas, matplotlib \vspace{2mm}
-		\end{itemize}}
-        }
-\end{twenty}
-
-\section{Publications}
-L. Antonie, H. Gadgil, G. Grewal, and K. Inwood, “Historical Data Integration - A Study of WWI Canadian Soldiers,” in 2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW), pp. 186-193, IEEE, 2016. \vspace{2mm}
 
 %----------------------------------------------------------------------------------------
 %	 EXPERIENCE
 %----------------------------------------------------------------------------------------
 
+
+\section{Summary}
+Software Architect, 9+ years of experience in IoT, Big Data \& Ontology Modelling.
+Strategic Thinker, Team Challenger, and Problem Solver.
+
 \section{Experience}
 
 \begin{twenty} % Environment for a list with descriptions
 \twentyitem
-    	{April 2017 -}
-		{Present}
-        {Data Engineer}
-        {\href{http://www.bell.ca/}{Bell}}
-        {}
-        {\begin{itemize}
-        \item Currently involved in building a realtime data ingestion pipeline on a Kafka cluster using Spark Streaming, to detect SMS spammers on Bell's network in realtime
-        \end{itemize}}
-        \\
-	\twentyitem
-    	{Sep 2015 -}
-		{May 2016}
-        {Co-founder \& Full Stack Developer}
-        {\href{http://www.localxchange.ca/}{LocalXChange Inc.}}
-        {}
-        {
-        {\begin{itemize}
-        \item In a team of 2, raised \$8,000 in funding from The Hub incubator at the University of Guelph, to develop a prototype hyperlocal content platform, aimed at delivering local news and events from community organizations to local users in realtime (i.e., hyperlocal)
-        \item In a team of 3, built hybrid mobile \& web apps with Ionic, Angular.js and MongoDB, surpassing 1,000 users within a month since launch
-        \item Met with city officials, including the Mayor of Guelph, and university officials to discuss marketing \& business strategies for the platform 
-    \end{itemize}}
-        }
-    \\   
-    \twentyitem
-   		{Sep 2015 -}
-		{Dec 2016}
-        {Graduate Teaching Assistant}
-        {\href{http://www.uoguelph.ca}{University of Guelph}}
-        {}
-        {
-        {\begin{itemize}
-        \item TA for CIS*2430 (OOP), CIS*4150 (Software Reliability \& Testing) and CIS*3530 (Database Systems \& Concepts) courses
-    \end{itemize}}
-        }
-     \\
-     \twentyitem
-   		{Dec 2013 -}
-		{Apr 2015}
-        {Test Automation Engineer}
-        {\href{http://www.synechron.com/}{Synechron}}
-        {}
-        {
-        \begin{itemize}
-        \item Developed a \textit{Keyword Driven} and \textit{Behavior Driven} test automation framework for \href{https://www.microsoft.com/en-ca/dynamics/crm.aspx}{Microsoft Dynamics CRM}. Wrote an efficient recursive function to search multi-level frames, reducing development time by approximately two weeks. Won SPOT award {\includegraphics[scale=0.05]{img/trophy.png}}
-        
-        \textit{My work opened up a new position in the organization, enabling it to earn additional revenue of \$3,500 per month (estimated)}
-        \item Demonstrated by proof of concept that rewriting a test automation framework for \href{https://www.microsoft.com/en-ca/dynamics/erp-ax-overview.aspx}{Microsoft Dynamics AX}, using an open source library (White) instead of a proprietary one (Coded UI), would enable the team to save \$4,000 annually by downgrading the prevailing edition of Microsoft Visual Studio from \textit{Premium} to \textit{Professional}
-    \end{itemize}
-    	}
-        
+{Sep 2015 -}
+{Present}
+{Business Architect}
+{\href{http://www.schneider-electric.com}{Cloud Platform, R\&D, Schneider Electric, Andover, MA, USA}}
+{}
+{
+\begin{itemize}
+%\item Assists several teams in their lambda architecture and projects towards adopting semantic technology.
+\item External representative of Schneider Electric in Ontology consortiums and standardization bodies.
+\item Authored 10 patents applications for IoT, Big Data and Ontology.
+\item Designed and Implemented an ontology centric PoC with product management leading to a new offer creation in Smart Buildings.
+\item Engineered software modules to accelerate ontology adoption: 
+\begin{itemize}
+\item  OLGA: A model driven approach generating object oriented libraries (in C\#, Java, Py) based on ontology models (in RDF, OWL). 
+\item FOrT\'{E}: A big data Federated Ontology and Timeseries query Engine based on Apache Spark.
+\item Butlor: A Workplace Advisor chatbot, ontology based query answering. Awarded 2nd place at the SE innovation day competition
+\end{itemize}
+\end{itemize}}
+\\
+\twentyitem
+{Jan 2012 -}
+{Aug 2015}
+{Software Designer}
+{\href{http://www.schneider-electric.com}{R\&D, Schneider Electric, Grenoble, France}}
+{}
+{
+\begin{itemize}
+\item In charge of the interoperability of systems and equipment across 5 different Business Units (Industry, Buildings, Energy, Power, IT).
+\item Leader of “Data Models and Semantics” group of experts, providing proof of concepts enabling adoption of semantic technologies.
+\item Designed and transferred the SRE module on an IoT gateway.
+\item Involved in the following European Research Projects:
+\begin{itemize}
+\item \href{http://www.imc-aesop.eu/}{AESOP}: focus on process control in industrial environments.
+\item \href{http://www.aws.cit.ie/scuba/}{SCUBA}: focus on devices auto configuration in Buildings.
+\end{itemize}
+\end{itemize}}
+\\
+\twentyitem
+{Oct 2008 -}
+{Nov 2011}
+{R\&D Ontology Engineer}
+{\href{https://www.orange.com/en/home}{Innovation, Orange, Grenoble, France}}
+{}
+{
+\begin{itemize}
+%\item SOA and Plug-and-Play Protocols (UPnP, DPWS, Apple/Bonjour) expert.
+\item Conducted research on Home Networks and interoperability between plug and play protocols in an SOA environment.
+\item Proposed an end-to-end architecture and solution to provide interoperability for Orange Applications in the Digital Home domain.
+\item Validated the approach on real devices in real environments.
+\item Collaborated with 4 teams on the Digital Home Program.
+\item Several publications in highly selective international conferences.
+\end{itemize}}
+\\
+\twentyitem
+{Feb 2008 -}
+{Jun 2008}
+{R\&D Intern Engineer}
+{\href{https://www.orange.com/en/home}{Innovation, Orange, Grenoble, France}}
+{}
+{
+\begin{itemize}
+\item Extended a component redeployment algorithm. 
+\item The implementation was validated on the ODIS M2M platform.
+\end{itemize}}
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+%2007-2008   Master of Science in Computer Science, Distributed Systems and Fault Tolerant Applications.
+                           
+
+%Bachelor of Science in Computer Engineering. Grenoble Institute of Technology, France. 
+ 
+%2003-2005   General Degree in Mathematics and Computer Applied on Science. Joseph Fourier University, 
+%Grenoble, France.
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2008 - 2012}
+        {}
+        {Ph.D. in Computer Science}
+        {\href{https://www.univ-grenoble-alpes.fr/en/}{Grenoble University, France}}
+        {PhD Thesis: Home Devices Mediation using Ontology Alignment and Code Generation Techniques.}
+        {}
+	\twentyitem
+    	{2005 - 2008}
+		{}
+        {MS. Eng., Computer Science, Distributed Systems and Networking.}
+        {\href{http://ensimag.grenoble-inp.fr/welcome/}{Ensimag/Telecom, INPG, France}}
+        {}
+        {}
+        \twentyitem
+    	{2007 - 2008}
+		{}
+        {MSc., Computer Science, Distributed Systems and Fault Tolerant Applications.}
+        {\href{http://www.grenoble-inp.fr/welcome/}{INPG, France}}
+        {}
+        {}
+         \twentyitem
+    	{2005 - 2006}
+		{}
+        {BSc., Telecommunication and Distributed Systems}
+        {\href{http://www.grenoble-inp.fr/welcome/}{INPG, France}}
+        {}
+        {}
+         \twentyitem
+    	{2003 - 2005}
+		{}
+        {DEUG, Computer and Math applied to Science}
+        {\href{https://www.univ-grenoble-alpes.fr/en/}{Joseph Fourier University, France}}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\nextpage
+\addtolength{\headheight}{0.5pt}
+
+\section{Published Research (selection)}
+\begin{itemize}
+\item A Semantic Based Multi-Platform IoT Integration Approach from Sensors to Chatbots, in submission.
+\item Energy Efficiency Driven by a Storage Model and Analytics on a Multi-System Semantic Integration, \textbf{IEEE Big Data Workshops 2017}.
+\item FOrTÉ: A Federated Ontology and Timeseries query Engine, \textbf{IEEE Smart Data 2017 (Best paper award)}.
+\item A Model Driven Approach Accelerating Ontology-based IoT Applications Development, \textbf{SIS-IoT Workshop, Semantics 2017}.
+\item SRE: Semantic Rules Engine for the Industrial Internet-Of-Things Gateways. \textbf{IEEE TII Journal 2017}.
+Building Management Insights Driven by a Multi-System Semantic Representation Approach, \textbf{IEEE WFIoT, 2016}.
+\item Migration of a Legacy Plant Lubrication System to SOA, \textbf{IEEE IECON 2013}.
+\item Home Devices Mediation using Ontology Alignment and Code Generation Techniques. \textbf{PhD Manuscript, 2012}, University Of Grenoble, France.
+\item Dynamic Service Adaptation for Plug and Play Device Interoperability, \textbf{IEEE CNSM 2011}.
+\item Combining Ontology Alignment with Model Driven Engineering Techniques for Home Devices Interoperability. \textbf{International Workshop on Software Technolgies for Embedded and Ubiquitous Systems, 2010}.
+\item CBay: Extending auction algorithm for component placement in the Internet of machines. \textbf{IEEE Percom2010 workshops 2010}.
+
+\item Please visit \href{https://www.linkedin.com/in/charbel-kaed/}{https://www.linkedin.com/in/charbel-kaed/} for the complete list
+\end{itemize}
+
+\section{Certifications}
+\begin{itemize}
+\item Improving Deep Neural Networks: Hyperparameter tuning, Regularization, Optimization, Coursera, 2018
+\item Neural Networks and Deep Learning, Coursera, 2017
+\item Machine Learning, Coursera, 2014
+\end{itemize}
+
+\section{Interests \& Activities}
+\begin{itemize}
+\item Deep Learning enthusiastic, Kaggle competitions novice
+\item Blockchain and cryptocurrency
+\item Raspberry Pi Home Automation development.
+\item Scuba Diving, Grenoble School of Scuba Diving.
+\item Music: 4th year Classical Guitar Conservatory.
+
+\end{itemize}
 
 \end{document} 
